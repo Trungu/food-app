@@ -25,9 +25,9 @@ app.post("/api/chat", async (req, res) => {
     console.log("Received request:", req.body);
     const { message } = req.body; // message sent from Expo app
 
-    // Call OpenAI API
+    // send req
     const response = await client.responses.create({
-      model: "gpt-5",
+      model: "gpt-4.1-nano",
       input: message,
     });
 
