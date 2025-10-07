@@ -32,6 +32,7 @@ app.post("/api/chat", async (req, res) => {
     });
 
     // send the response back
+    console.log("debug 2");
     res.json({ reply: response.output_text });
   } catch (error) {
     console.error(error);
